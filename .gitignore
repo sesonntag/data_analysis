@@ -1,0 +1,10 @@
+# ******************************************************************************
+# Title: .gitignore
+# Description: List of files to be ignored by git vcs
+# Author: Sebastian Sonntag
+# Date: 2020-01-02
+# License:
+# ******************************************************************************
+
+# Visual Studio Code related
+.vscode
