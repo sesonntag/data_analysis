@@ -20,6 +20,8 @@ dependencies:
   - compiler-rt_osx-64=9.0.0=ha700673_2
   - cycler=0.10.0=py38_0
   - davix=0.7.5=hfda3f8f_1
+  - entrypoints=0.3=py38_0
+  - flake8=3.7.9=py38_0
   - fontconfig=2.13.1=h6b1039f_1001
   - freetype=2.9.1=hb4e5f40_0
   - fribidi=1.0.5=h1de35cc_0
@@ -61,6 +63,7 @@ dependencies:
   - lz4-c=1.8.3=h6de7cb9_1001
   - matplotlib=3.1.2=py38_1
   - matplotlib-base=3.1.2=py38h11da6c2_1
+  - mccabe=0.6.1=py38_1
   - more-itertools=8.0.2=py_0
   - mpc=1.1.0=h6ef4df4_1
   - mpfr=4.0.1=h3018a27_3
@@ -76,6 +79,8 @@ dependencies:
   - pluggy=0.13.1=py38_0
   - progressbar2=3.37.1=py38_0
   - py=1.8.0=py_0
+  - pycodestyle=2.5.0=py38_0
+  - pyflakes=2.1.1=py38_0
   - pyparsing=2.4.5=py_0
   - pytest=5.3.2=py38_0
   - pytest-runner=5.2=py_0
