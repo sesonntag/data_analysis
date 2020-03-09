@@ -9,7 +9,7 @@
 # ******************************************************************************
 
 import pandas as pd
-from datetime import datetime
+# from datetime import datetime
 import matplotlib.pyplot as plt
 
 df = pd.read_csv('auger_public_2019_12_29.txt', sep=' ', skiprows=19,
@@ -19,6 +19,6 @@ df = pd.read_csv('auger_public_2019_12_29.txt', sep=' ', skiprows=19,
 
 df['cet_time'] = pd.to_datetime(df['unix_time'], unit='s')
 
-#plt.scatter(df['angle_phi'], df['angle_theta'])
+# plt.scatter(df['angle_phi'], df['angle_theta'])
 plt.hist(df['angle_theta'], bins=20)
 plt.show()
