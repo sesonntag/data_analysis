@@ -4,7 +4,7 @@
 # Title: analyze_auger_data.py
 # Description: Read Auger public data and analyze accordingly
 # Author: Sebastian Sonntag
-# Date: 2020-01-02
+# Date: 2020-12-29
 # License:
 # ******************************************************************************
 
@@ -12,7 +12,6 @@ import pandas as pd
 # from datetime import datetime
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
-import numpy as np
 
 
 # define a fit function
@@ -34,8 +33,10 @@ df_filtered = df[(df['energy'] >= 10)]
 popt, pcov = curve_fit(func, df_filtered['angle_theta'], df_filtered['energy'])
 
 # plot the results
-plt.scatter(df_filtered['angle_theta'], df_filtered['energy'], c=df_filtered['n_stations'])
-plt.plot(df_filtered['angle_theta'], func(df_filtered['angle_theta'], *popt), 'r-', label='fit: m=%5.3f, b=%5.3f,' % tuple(popt))
+plt.scatter(df_filtered['angle_theta'], df_filtered['energy'],
+            c=df_filtered['n_stations'])
+plt.plot(df_filtered['angle_theta'], func(df_filtered['angle_theta'], *popt),
+         'r-', label='fit: m=%5.3f, b=%5.3f,' % tuple(popt))
 plt.colorbar()
 plt.xlabel('Angle (theta) of incidence / °')
 plt.ylabel('Energy / Eev')
